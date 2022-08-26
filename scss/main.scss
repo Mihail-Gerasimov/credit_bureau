@@ -265,11 +265,17 @@ button {
 
 /* base */
 
+.btn-fixed {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    bottom: 20px;
+}
+
 // header
 
 .header {
     background-color: #F0EDED;
-    padding-bottom: 120px;
 
     &__wrapper {
         background-image: url(../img/2-header/background.png);
@@ -429,4 +435,44 @@ button {
     position: absolute;
     right: 15px;
     top: 12px;
+}
+
+// calc
+
+.calc {
+    padding: 125px 0;
+
+    &__advantages {
+        width: 100%;
+        max-width: 435px;
+
+        &--card {
+            background-color: #FFFFFF;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+            max-width: 435px;
+            width: 100%;
+            padding: 15px 0 15px 20px;
+            margin-bottom: 16px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 23px;
+
+                span {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+
 }

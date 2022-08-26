@@ -37,6 +37,8 @@
 
 <body>
 
+    <button class="btn bg-red position-fixed btn-fixed d-block d-md-none">Подать заявку</button>
+
     <header class="header">
         <div class="header__top mx-auto red">Помощь в получении кредита
         </div>
@@ -77,16 +79,21 @@
             </div>
         </div>
 
-        <div class="header__wrapper">
+        <div class="header__wrapper d-flex align-items-end">
             <div class="container-header">
-                <div class="header__main d-flex align-items-center justify-content-between">
+                <div
+                    class="header__main pb-4 pb-md-0 d-flex align-items-center justify-content-center justify-content-md-between">
                     <div>
                         <h1 class="header__title">Получите <span class="red">98%</span></h1>
-                        <h2 class="header__subtitle mb-3">одобрение по ставке от <span class="red">5.5%</span></h2>
+                        <h2 class="header__subtitle mb-2 mb-xxl-3">одобрение по ставке от <span class="red">5.5%</span>
+                        </h2>
                         <p class="header__argument mb-4">Даже с испорченной кредитной историей!</p>
+
+                        <img class="d-block d-md-none mb-3 mx-auto" src="./img/2-header/man-mob.png" alt="">
+
                         <button class="btn bg-red header__btn">Подать заявку</button>
 
-                        <div class="header__advantages d-flex">
+                        <div class="header__advantages d-flex flex-column flex-md-row">
                             <div class="header__advantages--element position-relative">
                                 <h3 class="header__advantages--element-title mb-2">Без проверки <br>кредитной истории
                                 </h3>
@@ -110,7 +117,7 @@
                         </div>
                     </div>
 
-                    <img src="./img/2-header/man.png" alt="">
+                    <img class="man d-none d-lg-block" src="./img/2-header/man.png" alt="">
                 </div>
             </div>
         </div>
@@ -118,7 +125,35 @@
     </header>
 
     <section class="calc">
-        <div class="container"></div>
+        <div class="container">
+            <div class="calc__wrapper d-flex justify-content-between">
+
+                <div class="calc__advantages">
+                    <div class="calc__advantages--card d-flex align-items-center">
+                        <img src="./img/3-calc/calc-icon-1.svg" alt="">
+                        <p>Помогли взять более<br><span class="red">15 МЛРД РУБЛЕЙ</span></p>
+                    </div>
+
+                    <div class="calc__advantages--card d-flex align-items-center">
+                        <img src="./img/3-calc/calc-icon-2.svg" alt="">
+                        <p>Более <span class="red">50 БАНКОВ</span><br>партнеров</span></p>
+                    </div>
+
+                    <div class="calc__advantages--card d-flex align-items-center">
+                        <img src="./img/3-calc/calc-icon-3.svg" alt="">
+                        <p>Одобрения даже<br>с <span class="red">ПЛОХОЙ ИСТОРИЕЙ</span> кредита</p>
+                    </div>
+
+                    <div class="calc__advantages--card d-flex align-items-center">
+                        <img src="./img/3-calc/calc-icon-4.svg" alt="">
+                        <p><span class="red">БЕЗ СПРАВОК</span><br>и
+                            поручителей</p>
+                    </div>
+                </div>
+
+                <!-- calc-calc -->
+            </div>
+        </div>
     </section>
 
     <section class="terms">
