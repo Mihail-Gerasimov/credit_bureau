@@ -37,6 +37,8 @@
 
 <body>
 
+    <button class="btn bg-red position-fixed btn-fixed d-block d-md-none">Подать заявку</button>
+
     <header class="header">
         <div class="header__top mx-auto red">Помощь в получении кредита
         </div>
@@ -77,16 +79,21 @@
             </div>
         </div>
 
-        <div class="header__wrapper">
+        <div class="header__wrapper d-flex align-items-end">
             <div class="container-header">
-                <div class="header__main d-flex align-items-center justify-content-between">
+                <div
+                    class="header__main pb-4 pb-md-0 d-flex align-items-center justify-content-center justify-content-md-between">
                     <div>
                         <h1 class="header__title">Получите <span class="red">98%</span></h1>
-                        <h2 class="header__subtitle mb-3">одобрение по ставке от <span class="red">5.5%</span></h2>
+                        <h2 class="header__subtitle mb-2 mb-xxl-3">одобрение по ставке от <span class="red">5.5%</span>
+                        </h2>
                         <p class="header__argument mb-4">Даже с испорченной кредитной историей!</p>
+
+                        <img class="d-block d-md-none mb-3 mx-auto" src="./img/2-header/man-mob.png" alt="">
+
                         <button class="btn bg-red header__btn">Подать заявку</button>
 
-                        <div class="header__advantages d-flex">
+                        <div class="header__advantages d-flex flex-column flex-md-row">
                             <div class="header__advantages--element position-relative">
                                 <h3 class="header__advantages--element-title mb-2">Без проверки <br>кредитной истории
                                 </h3>
@@ -110,7 +117,7 @@
                         </div>
                     </div>
 
-                    <img src="./img/2-header/man.png" alt="">
+                    <img class="man d-none d-lg-block" src="./img/2-header/man.png" alt="">
                 </div>
             </div>
         </div>
@@ -118,7 +125,96 @@
     </header>
 
     <section class="calc">
-        <div class="container"></div>
+        <div class="container">
+            <div class="calc__wrapper d-flex justify-content-between">
+
+                <div class="calc__advantages">
+                    <div class="calc__advantages--card d-flex align-items-center">
+                        <img src="./img/3-calc/calc-icon-1.svg" alt="">
+                        <p>Помогли взять более<br><span class="red">15 МЛРД РУБЛЕЙ</span></p>
+                    </div>
+
+                    <div class="calc__advantages--card d-flex align-items-center">
+                        <img src="./img/3-calc/calc-icon-2.svg" alt="">
+                        <p>Более <span class="red">50 БАНКОВ</span><br>партнеров</span></p>
+                    </div>
+
+                    <div class="calc__advantages--card d-flex align-items-center">
+                        <img src="./img/3-calc/calc-icon-3.svg" alt="">
+                        <p>Одобрения даже<br>с <span class="red">ПЛОХОЙ ИСТОРИЕЙ</span> кредита</p>
+                    </div>
+
+                    <div class="calc__advantages--card d-flex align-items-center">
+                        <img src="./img/3-calc/calc-icon-4.svg" alt="">
+                        <p><span class="red">БЕЗ СПРАВОК</span><br>и
+                            поручителей</p>
+                    </div>
+                </div>
+
+
+                <div class="calc__box calc__calc">
+                    <div class="row-input d-flex align-items-center justify-content-between">
+                        <div class="calc__calc-approval">
+                            <h3 class="calc__calc-percent">95%</h3>
+                            <p class="calc__calc-text">Процент одобрения кредита</p>
+                        </div>
+                        <div class="calc__calc-input-group">
+                            <label class="calc__calc-label" for="calc__calc-input">Сумма кредита до 20 млн ₽</label>
+                            <input id="calc__calc-input" type="text" class="calc__calc-input">
+                        </div>
+                    </div>
+
+                    <div class="calc__calc-text calc__calc-text--time">Выберите срок</div>
+                    <div class="row-calc-card d-flex flex-wrap justify-content-between">
+                        <div data-period="1" class="calc__calc-card">1 год</div>
+                        <div data-period="2" class="calc__calc-card">2 года</div>
+                        <div data-period="3" class="calc__calc-card">3 года</div>
+                        <div data-period="4" class="calc__calc-card">4 года</div>
+                        <div data-period="5" class="calc__calc-card">5 лет</div>
+                        <div data-period="6" class="calc__calc-card">6 лет</div>
+                        <div data-period="7" class="calc__calc-card">7 лет</div>
+                        <div data-period="8" class="calc__calc-card">8 лет</div>
+                        <div data-period="9" class="calc__calc-card">9 лет</div>
+                        <div data-period="10" class="calc__calc-card">10 лет</div>
+                        <p class="calc__calc-card-text">Расчет калькулятора произведен по ставкам, действующим при
+                            условии оформления финансовой защиты к кредиту.</br> Не является публичной офертой.</p>
+                    </div>
+                    <p class="calc__calc-offer">Наше предложение</p>
+                    <div class="row-payment d-flex justify-content-between align-items-center">
+                        <div class="calc__calc-bet-wrap">
+                            <div class="calc__select-wrap d-block d-md-none">
+                                <select name="calc__select" id="calc__select" class="calc__select">
+                                    <option value=""></option>
+                                    <option value="1">1 год</option>
+                                    <option value="2">2 года</option>
+                                    <option value="3">3 года</option>
+                                    <option value="4">4 года</option>
+                                    <option value="5">5 лет</option>
+                                    <option value="6">6 лет</option>
+                                    <option value="7">7 лет</option>
+                                    <option value="8">8 лет</option>
+                                    <option value="9">9 лет</option>
+                                    <option value="10">10 лет</option>
+                                </select>
+                            </div>
+                            <div class="calc__calc-bet"><span>Процентная ставка</span>
+                                <p>5.5%</p>
+                            </div>
+                        </div>
+                        <div class="calc__calc-payment">
+                            <span>Ежемесячный платеж</span>
+                            <div class="calc__calc-payment-box">
+                                <p class="calc__calc-sum">0</p>
+                                <p class="card__card-rouble">₽</p>
+                            </div>
+                        </div>
+                        <button class="button calc__button" data-toggle="modal" data-target="#staticBackdrop">Заполнить
+                            заявку</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <section class="terms">
