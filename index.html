@@ -152,10 +152,10 @@
                 </div>
 
 
-                <div class="calc__box calc__calc">
-                    <div class="row-input d-flex align-items-center justify-content-between">
-                        <div class="calc__calc-approval">
-                            <h3 class="calc__calc-percent">95%</h3>
+                <div class="calc__calc">
+                    <div class="mb-5 d-flex align-items-center justify-content-between">
+                        <div class="calc__calc-approval text-center">
+                            <h3 class="calc__calc-percent red">95%</h3>
                             <p class="calc__calc-text">Процент одобрения кредита</p>
                         </div>
                         <div class="calc__calc-input-group">
@@ -164,8 +164,9 @@
                         </div>
                     </div>
 
-                    <div class="calc__calc-text calc__calc-text--time">Выберите срок</div>
-                    <div class="row-calc-card d-flex flex-wrap justify-content-between">
+                    <p class="calc__calc-text mb-3">Выберите срок</p>
+
+                    <div class="mb-4 d-flex flex-wrap justify-content-between">
                         <div data-period="1" class="calc__calc-card">1 год</div>
                         <div data-period="2" class="calc__calc-card">2 года</div>
                         <div data-period="3" class="calc__calc-card">3 года</div>
@@ -176,15 +177,19 @@
                         <div data-period="8" class="calc__calc-card">8 лет</div>
                         <div data-period="9" class="calc__calc-card">9 лет</div>
                         <div data-period="10" class="calc__calc-card">10 лет</div>
+
                         <p class="calc__calc-card-text">Расчет калькулятора произведен по ставкам, действующим при
-                            условии оформления финансовой защиты к кредиту.</br> Не является публичной офертой.</p>
+                            условии оформления финансовой защиты к кредиту.</br> Не является публичной офертой.
+                        </p>
                     </div>
+
                     <p class="calc__calc-offer">Наше предложение</p>
-                    <div class="row-payment d-flex justify-content-between align-items-center">
+
+                    <div class="d-flex justify-content-between align-items-center">
                         <div class="calc__calc-bet-wrap">
                             <div class="calc__select-wrap d-block d-md-none">
                                 <select name="calc__select" id="calc__select" class="calc__select">
-                                    <option value=""></option>
+                                    <option value="">1 год</option>
                                     <option value="1">1 год</option>
                                     <option value="2">2 года</option>
                                     <option value="3">3 года</option>
@@ -201,14 +206,15 @@
                                 <p>5.5%</p>
                             </div>
                         </div>
-                        <div class="calc__calc-payment">
-                            <span>Ежемесячный платеж</span>
-                            <div class="calc__calc-payment-box">
+                        <div class="calc__calc-payment d-flex flex-column align-items-center">
+                            <span class="mb-2">Ежемесячный платеж</span>
+                            <div class="calc__calc-payment-box red d-flex align-items-center">
                                 <p class="calc__calc-sum">0</p>
                                 <p class="card__card-rouble">₽</p>
                             </div>
                         </div>
-                        <button class="button calc__button" data-toggle="modal" data-target="#staticBackdrop">Заполнить
+                        <button class="btn bg-red calc__button" data-toggle="modal"
+                            data-target="#staticBackdrop">Заполнить
                             заявку</button>
                     </div>
                 </div>
