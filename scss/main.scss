@@ -539,7 +539,7 @@ button {
 }
 
 .calc__calc-label {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
     opacity: 0.4;
     top: 10px;
@@ -630,20 +630,6 @@ button {
     margin-right: 5px;
 }
 
-.calc__button {}
-
-// .calc__button:focus {
-//     outline: none;
-//     border: 1px solid #3633E1;
-// }
-
-// .calc__button:hover {
-//     border: 1px solid #3633E1;
-//     background-color: #3633E1;
-//     color: #FFFFFF;
-//     transition: 0.3s;
-// }
-
 .calc__select-wrap {
     border: 1px solid #FC4639;
     position: relative;
@@ -674,8 +660,8 @@ button {
 
     option {
         background-color: #FC4639;
-        border-radius: 0;
-        border: 1px solid black;
+        color: #ffffff;
+        font-weight: 700;
     }
 }
 

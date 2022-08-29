@@ -97,6 +97,47 @@
         font-size: 16px;
         line-height: 180%;
     }
+
+    .calc__advantages--card {
+        max-width: 370px;
+        margin-bottom: 0px;
+    }
+
+    .calc__calc-input {
+        width: 290px;
+    }
+
+    .calc__button {
+        max-width: 220px;
+        font-size: 18px;
+    }
+
+    .calc__calc-payment span {
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+    .calc__calc-bet p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .calc__calc-bet span {
+        max-width: 57px;
+    }
+
+    .calc__advantages {
+        width: auto;
+        max-width: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 510px;
+    }
+
+    .calc__calc {
+        max-width: 580px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -119,6 +160,90 @@
         font-size: 16px;
         line-height: 20px;
         padding: 10px 0;
+    }
+
+    .calc {
+        padding: 80px 0 80px;
+    }
+
+    .calc__advantages--card {
+        max-width: 435px;
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 25px;
+        }
+    }
+
+    .calc__advantages {
+        width: 435px;
+        max-width: 100%;
+    }
+
+    .calc__calc {
+        width: 100%;
+        max-width: 500px;
+        padding: 35px 50px 50px;
+        min-height: auto;
+    }
+
+    .calc__calc-bet p {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .calc__calc-payment span {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 5px;
+    }
+
+    .calc__button {
+        font-size: 20px;
+        max-width: 283px;
+    }
+
+    .calc__calc-input {
+        width: 370px;
+    }
+
+    .calc__calc-input-group {
+        width: 100%;
+    }
+
+    .calc__calc-input {
+        width: 100%;
+        padding: 28px 0 10px 20px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .calc__calc-bet-wrap {
+        width: 100%;
+    }
+
+    .calc__calc-offer {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .calc__select-wrap {
+        height: fit-content;
+
+    }
+
+    .calc__select {
+        padding: 17px 0 17px 20px;
+    }
+
+    .calc__calc-bet {
+        padding: 0;
+        width: 135px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -181,5 +306,57 @@
 @media (max-width: 575px) {
     .nav__menu {
         right: -20px;
+    }
+
+    .calc {
+        padding: 40px 0 50px;
+
+        .container {
+            padding: 0;
+        }
+    }
+
+    .calc__advantages {
+        padding: 0 20px;
+        min-height: auto;
+    }
+
+    .calc__advantages--card img {
+        max-width: 55px;
+    }
+
+    .calc__advantages--card p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .calc__advantages--card p span {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .calc__advantages--card {
+        max-width: 340px;
+        margin: 0 auto 16px;
+
+        &:last-child {
+            margin-bottom: 25px;
+        }
+    }
+
+    .calc__calc {
+        padding: 35px 20px 50px;
+    }
+
+    .calc__calc-bet-wrap {
+        align-items: center;
+    }
+
+    .calc__select {
+        padding: 16px 0 16px 20px;
+    }
+
+    .calc__select-wrap {
+        height: 50px;
     }
 }

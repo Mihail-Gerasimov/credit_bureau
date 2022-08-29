@@ -126,7 +126,7 @@
 
     <section class="calc">
         <div class="container">
-            <div class="calc__wrapper d-flex justify-content-between">
+            <div class="calc__wrapper d-flex justify-content-between flex-column flex-lg-row align-items-center">
 
                 <div class="calc__advantages">
                     <div class="calc__advantages--card d-flex align-items-center">
@@ -153,8 +153,8 @@
 
 
                 <div class="calc__calc">
-                    <div class="mb-5 d-flex align-items-center justify-content-between">
-                        <div class="calc__calc-approval text-center">
+                    <div class="mb-4 mb-lg-5 d-flex align-items-center justify-content-between flex-column flex-lg-row">
+                        <div class="calc__calc-approval text-center mb-4 mb-lg-0">
                             <h3 class="calc__calc-percent red">95%</h3>
                             <p class="calc__calc-text">Процент одобрения кредита</p>
                         </div>
@@ -166,7 +166,7 @@
 
                     <p class="calc__calc-text mb-3">Выберите срок</p>
 
-                    <div class="mb-4 d-flex flex-wrap justify-content-between">
+                    <div class="mb-2 mb-xxl-4 d-none d-lg-flex flex-wrap justify-content-between">
                         <div data-period="1" class="calc__calc-card">1 год</div>
                         <div data-period="2" class="calc__calc-card">2 года</div>
                         <div data-period="3" class="calc__calc-card">3 года</div>
@@ -183,11 +183,11 @@
                         </p>
                     </div>
 
-                    <p class="calc__calc-offer">Наше предложение</p>
+                    <p class="calc__calc-offer d-none d-lg-block">Наше предложение</p>
 
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="calc__calc-bet-wrap">
-                            <div class="calc__select-wrap d-block d-md-none">
+                    <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                        <div class="calc__calc-bet-wrap mb-4 mb-lg-0 d-flex justify-content-between d-lg-block">
+                            <div class="calc__select-wrap d-block d-lg-none">
                                 <select name="calc__select" id="calc__select" class="calc__select">
                                     <option value="">1 год</option>
                                     <option value="1">1 год</option>
@@ -206,7 +206,8 @@
                                 <p>5.5%</p>
                             </div>
                         </div>
-                        <div class="calc__calc-payment d-flex flex-column align-items-center">
+                        <div class="calc__calc-payment mb-4 mb-lg-0 d-flex flex-column align-items-center">
+                            <p class="calc__calc-offer d-block d-lg-none">Наше предложение</p>
                             <span class="mb-2">Ежемесячный платеж</span>
                             <div class="calc__calc-payment-box red d-flex align-items-center">
                                 <p class="calc__calc-sum">0</p>
