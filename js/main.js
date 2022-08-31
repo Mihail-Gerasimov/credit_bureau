@@ -117,19 +117,25 @@ calcInput.addEventListener('input', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const width = window.innerWidth
     if (width < 576) {
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.swiper-terms', {
 
             pagination: {
-                el: '.swiper-pagination',
+                el: '.pegination-terms',
                 type: 'progressbar',
             },
             spaceBetween: 10,
             slidesPerView: 1.2,
-            // loop: true,
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
+        });
+
+        const swiperCompany = new Swiper('.company-swiper', {
+
+            pagination: {
+                el: '.company__pagination',
+                type: 'progressbar',
+            },
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 2.5,
         });
     }
 })
