@@ -524,4 +524,14 @@
         }
     }
 
+    .company-swiper {
+        max-width: 535px;
+        margin-left: 0;
+        // overflow: hidden !important;
+    }
+
+    .company__slide {
+        max-width: none;
+        margin-right: 0;
+    }
 }

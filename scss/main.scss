@@ -792,7 +792,7 @@ button {
 // company
 .company {
     padding: 114px 0 160px;
-    overflow: hidden;
+    // overflow: hidden;
 
     &__description {
         font-size: 18px;
@@ -808,16 +808,12 @@ button {
 
     &__slide {
         max-width: 170px;
+        width: 100%;
         margin-right: 18px;
+
 
         &:last-child {
             margin-right: 0;
         }
     }
 }
-
-// .company-swiper {
-//     width: 100%;
-//     max-width: 575px;
-//     overflow: hidden !important;
-// }
