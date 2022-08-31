@@ -133,9 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 el: '.company__pagination',
                 type: 'progressbar',
             },
-            loop: true,
+            // loop: true,
             spaceBetween: 10,
-            slidesPerView: 2.5,
+            // slidesPerView: 2.5,
         });
     }
 })
