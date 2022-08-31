@@ -138,6 +138,16 @@
     .calc__calc {
         max-width: 580px;
     }
+
+    .help__card {
+        max-width: 230px;
+        min-height: 135px;
+    }
+
+    .help__card--description {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -257,6 +267,16 @@
     .terms {
         padding-bottom: 80px;
     }
+
+    .help__card {
+        max-width: 283px;
+        min-height: 150px;
+
+        &--description {
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -334,6 +354,10 @@
         max-width: 40px;
     }
 
+    .help__card {
+        max-width: 240px;
+        min-height: 150px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -477,4 +501,27 @@
     .terms {
         padding-bottom: 55px;
     }
+
+    .help__card {
+        max-width: 135px;
+        min-height: 120px;
+
+        img {
+            margin-bottom: 8px;
+            max-width: 60px;
+        }
+
+        &--description {
+            font-size: 12px;
+            line-height: 15px;
+            max-width: 125px;
+        }
+
+        &:last-child {
+            background-color: #FFFFFF;
+            border: 1px solid #FC4639;
+            justify-content: start;
+        }
+    }
+
 }
