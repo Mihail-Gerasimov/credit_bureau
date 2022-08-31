@@ -248,11 +248,36 @@ button {
     font-weight: 900;
     font-size: 42px;
     line-height: 49px;
+    margin-bottom: 55px;
 
     span {
         font-weight: 400;
         font-size: 30px;
         line-height: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    .title {
+        font-size: 35px;
+        line-height: 40px;
+
+        span {
+            font-size: 27px;
+            line-height: 33px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 30px;
+        line-height: 35px;
+
+        span {
+            font-size: 24px;
+            line-height: 28px;
+        }
     }
 }
 
@@ -268,7 +293,7 @@ button {
 
 .btn-fixed {
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50.2%);
     z-index: 10;
     bottom: 20px;
 }
@@ -670,7 +695,55 @@ button {
     ;
 }
 
+// terms
+.terms {
+    padding-bottom: 115px;
 
-// .calc__select-wrap {
-//     display: none;
-// }
+    &__card {
+        background-color: #FFFFFF;
+        border: 1px solid #FC4639;
+        min-height: 190px;
+        max-width: 385px;
+        width: 100%;
+        padding: 30px 0 0 30px;
+
+        &--title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 15px;
+        }
+
+        &--content img {
+            margin-right: 10px;
+        }
+
+        &--content-list {
+            font-size: 14px;
+            line-height: 16px;
+
+            li {
+                margin-bottom: 5px;
+                position: relative;
+                padding-left: 10px;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    display: table;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-45%);
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: #000000;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

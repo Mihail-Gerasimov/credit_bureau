@@ -245,6 +245,18 @@
         align-items: center;
         justify-content: center;
     }
+
+    .terms__card--content img {
+        max-width: 70px;
+    }
+
+    .terms__card {
+        max-width: 340px;
+    }
+
+    .terms {
+        padding-bottom: 80px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -301,6 +313,27 @@
         max-width: 265px;
         font-size: 14px;
     }
+
+    .terms__card {
+        max-width: 260px;
+        min-height: 150px;
+        padding: 15px 0 0 10px;
+    }
+
+    .terms__card--title {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .terms__card--content-list {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .terms__card--content img {
+        max-width: 40px;
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -358,5 +391,90 @@
 
     .calc__select-wrap {
         height: 50px;
+    }
+
+    .terms__card {
+        max-width: 100%;
+        min-height: 250px;
+        padding: 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                margin: 0 auto 10px;
+                max-width: 70px;
+            }
+        }
+    }
+
+    .terms__card--title {
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0 auto 10px;
+    }
+
+    .terms__card--content-list {
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        margin: 0 auto;
+
+        li {
+            margin-bottom: 6px;
+            padding-left: 0px;
+            padding-bottom: 5px;
+
+            &::before {
+                border-radius: 0;
+                width: 40px;
+                height: 1px;
+                left: 50%;
+                top: auto;
+                transform: translateX(-50%);
+                bottom: 0;
+            }
+        }
+    }
+
+    .terms .container {
+        padding: 0 5px;
+    }
+
+    .swiper-terms {
+        padding-bottom: 50px;
+    }
+
+    .swiper-terms .pegination-terms {
+        top: auto;
+        bottom: 0 !important;
+        background-color: #EAEAEA;
+        max-width: 96%;
+
+        span {
+            background-color: #FC4639;
+        }
+    }
+
+    .swiper-terms-help {
+        position: absolute;
+        bottom: 12px;
+        right: 20px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #C4C4C4;
+    }
+
+    .tetms-title {
+        padding-left: 20px;
+    }
+
+    .terms {
+        padding-bottom: 55px;
     }
 }
