@@ -131,15 +131,15 @@ document.addEventListener('DOMContentLoaded', () => {
             slidesPerView: 1.2,
         });
 
-        const swiperTwo = new Swiper('.company-swiper', {
-            // resizeObserver: false,
+        const swiperTwo = new Swiper('.swiper.company-swiper', {
+            resizeObserver: false,
             pagination: {
                 el: '.company__pagination',
                 type: 'progressbar',
             },
-            loop: true,
-            spaceBetween: 10,
-            slidesPerView: 2.5,
+            // loop: true,
+            spaceBetween: 20,
+            slidesPerView: 1.3,
         });
 
     }
