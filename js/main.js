@@ -130,6 +130,10 @@ document.addEventListener('DOMContentLoaded', () => {
             spaceBetween: 10,
             slidesPerView: 1.2,
         });
+    }
+
+    const widthTwo = window.innerWidth
+    if (width < 476) {
 
         const swiperTwo = new Swiper('.swiper.company-swiper', {
             resizeObserver: false,
@@ -137,11 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 el: '.company__pagination',
                 type: 'progressbar',
             },
-            // loop: true,
+            loop: true,
             spaceBetween: 20,
-            slidesPerView: 1.3,
+            slidesPerView: 1.45,
         });
-
     }
 })
 

@@ -40,6 +40,10 @@
     .header .nav__list--element {
         margin-right: 20px;
     }
+
+    .company__people {
+        max-width: 625px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -147,6 +151,24 @@
     .help__card--description {
         font-size: 14px;
         line-height: 17px;
+    }
+
+    .company {
+        padding: 80px 0 120px;
+    }
+
+    .company__description {
+        font-size: 15px;
+        max-width: 380px;
+    }
+
+    .company__slide {
+        max-width: 130px;
+    }
+
+    .company__people {
+        max-width: 540px;
+        padding: 18px;
     }
 }
 
@@ -277,6 +299,19 @@
             line-height: 21px;
         }
     }
+
+    .company {
+        padding: 80px 0 90px;
+    }
+
+    .company__slide {
+        max-width: 115px;
+    }
+
+    .company__people {
+        max-width: 340px;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -357,6 +392,19 @@
     .help__card {
         max-width: 240px;
         min-height: 150px;
+    }
+
+    .company {
+        padding: 55px 0 205px;
+    }
+
+    .company__description {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .company__slide {
+        max-width: 160px;
     }
 }
 
@@ -466,19 +514,19 @@
         }
     }
 
-    .terms .container {
-        padding: 0 5px;
+    .terms {
+        overflow: hidden;
     }
 
     .swiper-terms {
         padding-bottom: 50px;
+        overflow: visible;
     }
 
     .swiper-terms .pegination-terms {
         top: auto;
         bottom: 0 !important;
         background-color: #EAEAEA;
-        max-width: 96%;
 
         span {
             background-color: #FC4639;
@@ -488,15 +536,15 @@
     .swiper-terms-help {
         position: absolute;
         bottom: 12px;
-        right: 20px;
+        right: 0;
         font-size: 12px;
         line-height: 14px;
         color: #C4C4C4;
     }
 
-    .tetms-title {
-        padding-left: 20px;
-    }
+    // .tetms-title {
+    //     padding-left: 20px;
+    // }
 
     .terms {
         padding-bottom: 55px;
@@ -524,21 +572,45 @@
         }
     }
 
-    .company .container {
-        padding-right: 0px;
-    }
+    // .company .container {
+    //     padding-right: 0px;
+    // }
 
     .company__description {
         font-size: 16px;
         margin-bottom: 60px;
         max-width: 100%;
+        // padding-right: 20px;
+    }
+
+    .company__slide {
+        max-width: 125px;
+    }
+
+}
+
+@media (max-width: 475px) {
+    .company .container {
+        padding-right: 0px;
+    }
+
+    .company__main {
         padding-right: 20px;
     }
 
+    .company__content {
+        padding-bottom: 55px;
+        width: 100%;
+    }
+
+    .company__description {
+        max-width: 300px;
+    }
+
     .swiper-main {
-        max-width: 355px !important;
+        max-width: 335px !important;
         width: 100% !important;
-        margin: 0 auto;
+        // margin: 0 auto;
         padding-right: 20px;
     }
 
@@ -549,10 +621,19 @@
     .company__slide {
         max-width: none;
         margin: 0 auto;
+    }
 
-        img {
-            margin: 0 auto;
-            width: 100%;
-        }
+    .company__content .company__pagination {
+        top: auto;
+        bottom: 0 !important;
+        background-color: #eaeaea;
+    }
+
+    .company__content .company__pagination span {
+        background-color: #fc4639;
+    }
+
+    .swiper-company-help {
+        display: block !important;
     }
 }
