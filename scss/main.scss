@@ -821,3 +821,48 @@ button {
         display: none;
     }
 }
+
+// argument
+.argument {
+    padding-bottom: 125px;
+
+    &__main {
+        background-color: #FFFFFF;
+        min-height: 405px;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 65px;
+        overflow: hidden;
+
+        h2 {
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 56px;
+            color: #FC4639;
+            margin-bottom: 30px;
+
+            span {
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 42px;
+                color: #2F2F2F;
+            }
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 140%;
+            margin-bottom: 40px;
+
+            span {
+                color: #FC4639;
+            }
+        }
+
+        img {
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
