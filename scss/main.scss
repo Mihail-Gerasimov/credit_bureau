@@ -866,3 +866,38 @@ button {
         }
     }
 }
+
+// simply
+.simply {
+    padding-bottom: 125px;
+
+    &__card {
+        width: 100%;
+        max-width: 385px;
+        min-height: 140px;
+        padding-left: 90px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+
+        &--title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+        }
+
+        &--subtitle {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &--description {
+            font-size: 14px;
+            line-height: 16px;
+            max-width: 205px;
+        }
+    }
+}

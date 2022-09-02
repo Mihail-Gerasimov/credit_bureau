@@ -188,6 +188,10 @@
     .argument__main img {
         max-width: 500px;
     }
+
+    .simply__card {
+        max-width: 310px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -360,6 +364,32 @@
     .argument {
         padding-bottom: 95px;
     }
+
+    .simply__card {
+        max-width: 232px;
+        min-height: 130px;
+        padding-left: 50px;
+
+        img {
+            max-width: 45px;
+        }
+    }
+
+    .simply__card--title {
+        font-size: 30px;
+        line-height: 35px;
+        left: -18px;
+    }
+
+    .simply__card--description {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 160px;
+    }
+
+    .simply {
+        padding-bottom: 95px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -488,6 +518,36 @@
 
     .argument {
         padding-bottom: 75px;
+    }
+
+    .simply {
+        padding-bottom: 75px;
+    }
+
+    .simply__card {
+        max-width: 400px;
+        min-height: 115px;
+        padding-left: 40px;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .simply__card img {
+        max-width: none;
+    }
+
+    .simply__card--description {
+        font-size: 13px;
+        line-height: 17px;
+        max-width: 340px;
+    }
+
+    .simply__card--title {
+        font-size: 28px;
+        line-height: 33px;
     }
 }
 
@@ -671,6 +731,10 @@
     }
 
     .argument {
+        padding-bottom: 55px;
+    }
+
+    .simply {
         padding-bottom: 55px;
     }
 }
