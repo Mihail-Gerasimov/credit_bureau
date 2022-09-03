@@ -12,6 +12,14 @@
     .man {
         max-width: 600px;
     }
+
+    .decor {
+        max-width: 300px;
+    }
+
+    .benefits__card {
+        width: 410px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -43,6 +51,21 @@
 
     .company__people {
         max-width: 625px;
+    }
+
+    .decor {
+        max-width: 200px;
+    }
+
+    .benefits__card {
+        width: 370px;
+    }
+
+    .benefits__card--description {
+        font-size: 14px;
+        line-height: 19px;
+        max-width: 295px;
+        margin-bottom: 20px;
     }
 }
 
@@ -191,6 +214,14 @@
 
     .simply__card {
         max-width: 310px;
+    }
+
+    .benefits__card {
+        width: 330px;
+    }
+
+    .decor {
+        max-width: 140px;
     }
 }
 
@@ -390,6 +421,14 @@
     .simply {
         padding-bottom: 95px;
     }
+
+    .decor {
+        display: none;
+    }
+
+    .benefits {
+        padding: 90px 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -549,6 +588,34 @@
         font-size: 28px;
         line-height: 33px;
     }
+
+    .benefits {
+        padding: 55px 0;
+    }
+
+    .benefits__card {
+        width: 100%;
+        min-width: 380px;
+        min-height: 275px;
+    }
+
+    .benefits__card--title {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 15px;
+    }
+
+    .benefits__card--description {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .benefits__card ul>li {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -736,6 +803,14 @@
 
     .simply {
         padding-bottom: 55px;
+    }
+
+    .benefits__card {
+        min-width: 280px;
+    }
+
+    .benefits__card--description {
+        max-width: 250px;
     }
 }
 
