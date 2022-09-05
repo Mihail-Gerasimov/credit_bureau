@@ -227,6 +227,33 @@
     .questions__main img {
         max-width: 350px;
     }
+
+    .basement__one--logo img {
+        max-width: 45px;
+    }
+
+    .basement__one--logo-title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .basement__two--nav li {
+        margin-right: 15px;
+
+        a {
+            font-size: 12px;
+            line-height: 100%;
+        }
+    }
+
+    .basement__three--argument {
+        font-size: 11px;
+        max-width: 200px;
+    }
+
+    .basement__two--address {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -441,6 +468,16 @@
     .questions__main img {
         display: none;
     }
+
+    .basement__three {
+        width: 100%;
+
+        &--argument {
+            max-width: none;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -638,6 +675,66 @@
         font-size: 14px;
         line-height: 16px;
         padding: 12px 15px;
+    }
+
+    .basement__three--argument {
+        padding-top: 50px;
+        position: relative;
+        font-size: 14px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #ffffff;
+            top: 20px;
+        }
+    }
+
+    .basement__one--logo-title {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .basement__two--nav {
+        margin-right: 45px;
+
+        li {
+            margin-right: 0;
+            margin-bottom: 11px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .basement__two--address {
+        max-width: 125px;
+        text-align: start !important;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            top: -10px;
+            width: 100%;
+            height: 1px;
+            background-color: #ffffff;
+        }
+    }
+
+    .basement {
+        padding: 30px 0 100px;
+        background-color: rgba(252, 70, 57, .45);
     }
 }
 

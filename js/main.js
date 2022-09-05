@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // modal
+    // mobile-menu
     const burgerBtn = document.querySelector('.nav__burger'),
         cLosed = document.querySelector('.close'),
         mobileMenu = document.querySelector('.nav__menu'),

@@ -993,3 +993,49 @@ button {
     max-width: 740px;
     height: 100%;
 }
+
+// basement
+.basement {
+    padding: 40px 0;
+    background-color: rgba(252, 70, 57, .45);
+
+    &__one--logo-title {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__one--time-description {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__two--nav li {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 180%;
+            color: #FFFFFF;
+        }
+    }
+
+    &__two--address {
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+
+    &__three--argument {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        max-width: 280px;
+    }
+}
