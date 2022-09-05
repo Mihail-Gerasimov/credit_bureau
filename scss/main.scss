@@ -947,3 +947,49 @@ button {
         }
     }
 }
+
+// question
+.questions {
+    padding-bottom: 85px;
+
+    &__question {
+        overflow: hidden;
+        margin-bottom: 8px;
+    }
+
+    &__question-header {
+        width: 100%;
+        max-width: 740px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+
+        font-size: 18px;
+        line-height: 21px;
+
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+    }
+
+    &__question-content {
+        transition: 0.5s;
+        height: 0;
+        max-width: 740px;
+        font-size: 0;
+        line-height: 0%;
+    }
+}
+
+.questions__question-header--active {
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #FC4639;
+}
+
+.questions__question-content--active {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 30px;
+    max-width: 740px;
+    height: 100%;
+}

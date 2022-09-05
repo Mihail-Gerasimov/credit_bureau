@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    // all slider
     const width = window.innerWidth
     if (width < 576) {
 
@@ -146,5 +147,16 @@ document.addEventListener('DOMContentLoaded', () => {
             slidesPerView: 1.45,
         });
     }
+
+    // Accordion
+    const questions = document.querySelectorAll('.questions__question-header');
+
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            question.nextSibling.nextSibling.classList.toggle('questions__question-content--active');
+            question.classList.toggle('questions__question-header--active');
+        });
+    });
+
 })
 
