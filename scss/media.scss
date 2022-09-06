@@ -67,6 +67,14 @@
         max-width: 295px;
         margin-bottom: 20px;
     }
+
+    .quiz__main {
+        padding-right: 80px;
+    }
+
+    .quiz__decor {
+        max-width: 700px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -254,6 +262,27 @@
     .basement__two--address {
         font-size: 14px;
     }
+
+    .quiz__main {
+        padding-right: 25px;
+    }
+
+    .quiz__content--description {
+        max-width: 465px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .quiz__content--questions-title {
+        font-size: 18px;
+        line-height: 21px;
+        max-width: 470px;
+    }
+
+    .quiz__decor {
+        max-width: 590px;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -477,6 +506,73 @@
             margin: 0 auto;
             text-align: center;
         }
+    }
+
+    .quiz__decor {
+        display: none;
+    }
+
+    .quiz__main {
+        padding: 40px 25px;
+        justify-content: flex-start;
+        min-height: inherit;
+    }
+
+    .quiz__content--questions-title {
+        max-width: none;
+    }
+
+    .quiz__content--description {
+        max-width: none;
+    }
+
+    .quiz__lastStep--description {
+        max-width: none;
+        margin-bottom: 0px;
+    }
+
+    .quiz__lastStep--subtitle {
+        margin-bottom: 30px;
+    }
+
+    .quiz__lastStep--form {
+        margin-bottom: 45px;
+    }
+
+    .quiz__thanks {
+        min-height: 500px;
+    }
+
+    .quiz__thanks--description {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .quiz__thanks {
+        min-height: 400px;
+        padding: 50px 20px 0;
+        background-image: url(../img/9-quiz/9.1quiz-thanks/quiz-thanks-background-mob.png);
+    }
+
+    .modal-dialog {
+        max-width: 335px;
+        margin: 1.75rem auto !important;
+    }
+
+    .modal-content {
+        padding: 110px 10px 90px;
+    }
+
+    .title-modal {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .btn-close {
+        width: 25px;
+        height: 25px;
+        background-size: 25px 25px;
     }
 }
 
@@ -736,6 +832,65 @@
         padding: 30px 0 100px;
         background-color: rgba(252, 70, 57, .45);
     }
+
+    .quiz__content--description {
+        max-width: 345px;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+
+    .quiz__content--questions-title {
+        font-size: 18px;
+        line-height: 21px;
+        max-width: 400px;
+    }
+
+    .label-question {
+        width: 100%;
+    }
+
+    .quiz__content--buttons .btn-quiz {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 15px 0;
+        max-width: none;
+    }
+
+    .text-question {
+        padding: 13px 0 13px 15px;
+        background: #fff;
+        border: 1px solid #fc4639;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .quiz__lastStep--subtitle {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .quiz__lastStep--description,
+    .quiz__lastStep--argument {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .quiz__lastStep--form-input {
+        max-width: none;
+        padding: 15px 0 15px 15px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .modal-thanks {
+        max-width: 375px;
+        padding: 110px 0;
+    }
+
+    .modal-thanks__close {
+        width: 25px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -931,6 +1086,15 @@
 
     .benefits__card--description {
         max-width: 250px;
+    }
+
+    .quiz .container-big {
+        padding: 0;
+    }
+
+    .modal-thanks {
+        max-width: 335px;
+        padding: 90px 0;
     }
 }
 

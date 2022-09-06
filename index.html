@@ -40,7 +40,8 @@
 
 <body>
 
-    <button class="btn bg-red position-fixed btn-fixed d-block d-md-none">Подать заявку</button>
+    <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+        class="btn bg-red position-fixed btn-fixed d-block d-md-none">Подать заявку</button>
 
     <header class="header">
         <div class="header__top mx-auto red">Помощь в получении кредита
@@ -94,7 +95,8 @@
 
                         <img class="d-block d-md-none mb-3 mx-auto" src="./img/2-header/man-mob.png" alt="">
 
-                        <button class="btn bg-red header__btn">Подать заявку</button>
+                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                            class="btn bg-red header__btn">Подать заявку</button>
 
                         <div class="header__advantages d-flex flex-column flex-md-row">
                             <div class="header__advantages--element position-relative">
@@ -217,8 +219,8 @@
                                 <p class="card__card-rouble">₽</p>
                             </div>
                         </div>
-                        <button class="btn bg-red calc__button" data-toggle="modal"
-                            data-target="#staticBackdrop">Заполнить
+                        <button class="btn bg-red calc__button" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">Заполнить
                             заявку</button>
                     </div>
                 </div>
@@ -367,7 +369,8 @@
                 </div>
 
                 <div class="col-3 help__card d-none d-sm-flex">
-                    <button class="btn bg-red">Подать заявку</button>
+                    <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn bg-red">Подать
+                        заявку</button>
                 </div>
             </div>
         </div>
@@ -425,7 +428,8 @@
                         5,5%</span>, даже
                     с плохой
                     кредитной историей</p>
-                <button class="btn bg-red argument__btn">Заполнить заявку</button>
+                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    class="btn bg-red argument__btn">Заполнить заявку</button>
 
                 <img class="position-absolute d-none d-md-block" src="./img/7-argument/argument-man.png" alt="">
             </div>
@@ -473,9 +477,12 @@
     <!-- quiz -->
     <section class="quiz">
         <div class="container-big">
-            <div class="quiz__main">
+            <!-- quiz__main - скрывается перед quzi-thanks -->
+            <div style="" class="quiz__main">
                 <img class="quiz__decor position-absolute" src="./img/9-quiz/quiz-decor.png" alt="">
-                <div class="quiz__content">
+
+                <!-- quiz__content - скрывается перед ласт степ - quiz__lastStep -->
+                <div style="" class="quiz__content">
                     <h3 class="title mb-4">Узнать ставку сейчас</h3>
                     <p class="quiz__content--description">Пройдите небольшой тест и узнайте свою ставку по кредиту
                         (всего 3
@@ -485,7 +492,7 @@
                         <h4 class="quiz__content--questions-title">Какие у Вас проблемы, связанные с отказами в банках
                             и сложностью в получении кредита?</h4>
 
-                        <div class="quiz-questions-wrapper">
+                        <form class="quiz-questions-wrapper" action="">
                             <label for="radio" class="label-question">
                                 <input checked type="radio" name="radio" class="input-question">
                                 <p class="text-question">Плохая кредитная история</p>
@@ -520,7 +527,7 @@
                                 <input type="radio" name="radio" class="input-question">
                                 <p class="text-question">От 500 000 до 1 000 000 руб.</p>
                             </label>
-                        </div>
+                        </form>
                     </div>
 
                     <div class="quiz__content--buttons">
@@ -528,7 +535,36 @@
                         <button class="btn-quiz btn-next">Далее</button>
                     </div>
                 </div>
+                <!-- quiz__content - скрывается перед ласт степ - quiz__lastStep -->
+
+                <div style="display:none;" class="quiz__lastStep">
+                    <h3 class="title mb-4">Предварительно одобрен</h3>
+                    <h4 class="quiz__lastStep--subtitle">кредит по ставке<span class="red">6% годовых</span></h4>
+                    <p class="quiz__lastStep--description">Мы работаем с самыми крупными банками России, вероятность
+                        одобрения кредита с нашей помощью составляет 99%!</p>
+                    <p class="quiz__lastStep--argument">Успей получить кредит сейчас!</p>
+                    <form class="quiz__lastStep--form" action="">
+                        <div class=""><input class="quiz__lastStep--form-input" placeholder="Ваше имя" type="text">
+                        </div>
+                        <div class=""><input class="quiz__lastStep--form-input" placeholder="+ 7 (___) ___ - __ - __"
+                                type="text"></div>
+                    </form>
+                    <button class="btn bg-red">Оставить заявку</button>
+                </div>
             </div>
+            <!-- quiz__main - скрывается перед quzi-thanks -->
+
+
+            <div style="display:none;" class="quiz__thanks">
+                <h2 class="title text-center mb-3">
+                    Ваша заявка одобрена
+                </h2>
+                <p class="quiz__thanks--description">
+                    Наш юрист свяжется с Вами в ближайшее время!
+                </p>
+                <img class="d-block d-lg-none" src="./img/9-quiz/9.1quiz-thanks/quiz-thanks-interpreter.png" alt="">
+            </div>
+
         </div>
     </section>
     <!-- quiz -->
@@ -686,13 +722,36 @@
         </div>
     </footer>
 
-    <!-- modal -->
-    <div class="modal">
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h2 class="title-modal mb-4">Обратный звонок</h2>
+                <form class="form-modal" action="">
+                    <div class="mb-2">
+                        <input class="modal-input" placeholder="Имя" type="text">
+                    </div>
+                    <div class="mb-2">
+                        <input class="modal-input" placeholder="+7 (___) ___ - __ - __" type="text">
+                    </div>
+                    <button class="btn-modal">Отправить</button>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <div class="modal-thanks"></div>
-    <!-- modal -->
+    <div style="display:none;" class="modal-thanks">
 
+        <img src="./img/14-modal/14.1-modal-thanks/modal-thanks-ok.svg" alt="">
+        <h2 class="title mt-4 mb-3">Заявка отправлена</h2>
+        <p class="modal-thanks__description text-center red">Мы получили вашу заявку.<br>
+            Наш юрист свяжится с вами</p>
+        <img class="modal-thanks__close" src="./img/14-modal/close.svg" alt="">
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
