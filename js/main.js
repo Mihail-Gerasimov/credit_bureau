@@ -158,5 +158,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const swiperThree = new Swiper('.reviews-swiper', {
+        resizeObserver: false,
+        pagination: {
+            el: '.company__pagination',
+            type: 'progressbar',
+        },
+        // loop: true,
+        spaceBetween: 20,
+        slidesPerView: 1.6,
+    });
+
 })
 
