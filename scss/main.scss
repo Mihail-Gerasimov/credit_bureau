@@ -820,6 +820,10 @@ button {
     .swiper-company-help {
         display: none;
     }
+
+    .company__pagination {
+        display: none;
+    }
 }
 
 // argument
@@ -1213,6 +1217,16 @@ button {
 .reviews__play {
     top: 20px;
     left: 15px;
+}
+
+.reviews__pagination {
+    top: auto !important;
+    bottom: 0 !important;
+    background-color: #eaeaea;
+}
+
+.reviews__pagination span {
+    background-color: #fc4639 !important;
 }
 
 // basement

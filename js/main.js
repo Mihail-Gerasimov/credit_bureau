@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiperThree = new Swiper('.reviews-swiper', {
         resizeObserver: false,
         pagination: {
-            el: '.company__pagination',
+            el: '.reviews__pagination',
             type: 'progressbar',
         },
         // loop: true,
